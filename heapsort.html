@@ -80,47 +80,103 @@
                                 style="color: #ffffff;"></i></button>
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- whitespaces -->
-                    <div class="col-md-2">
+                    <div class="btn-group col-md-2" role="group">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            who are we?
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutUs">
+                            <i class="fa-solid fa-people-group" style="color: #ffffff;" data-bs-toggle="tooltip"
+                                data-bs-title="Who are we?"></i>
                         </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Who are we?</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <h3>• Nathaniel Gatpandan <a href="https://github.com/LeinahI"
-                                                target="_blank"><i class="fa-brands fa-github"
-                                                    style="color: #000000;"></i></a></h3>
-                                        <h3>• Nomer Dela Cruz</h3>
-                                        <h3>• Ashlie Diaz</h3>
-                                        <h3>• Vien Mar Gelantaga-an</p>
-                                            <h3>• Reiniel Jhon Javier</h3>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#whatisHeapSort">
+                            <i class="fa-solid fa-circle-question" style="color: #ffffff;" data-bs-toggle="tooltip"
+                                data-bs-title="About Heap Sort"></i>
+                        </button>
                     </div>
-
-
                     <!-- start and restart button end -->
                 </div>
             </center>
             <!-- Buttons end -->
         </div>
     </div>
+
+    <!-- Modals start -->
+    <div class="modal fade" id="aboutUs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Who are we?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <h3>• Nathaniel Gatpandan <a href="https://github.com/LeinahI" target="_blank"><i
+                                class="fa-brands fa-github" style="color: #000000;"></i></a></h3>
+                    <h3>• Nomer Dela Cruz</h3>
+                    <h3>• Ashlie Diaz</h3>
+                    <h3>• Vien Mar Gelantaga-an</p>
+                        <h3>• Reiniel Jhon Javier</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="whatisHeapSort" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Heap Sort</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <h3>Description</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Heap Sort is an iterative in-place sorting method built on top of
+                        heap-based auxiliary data
+                        structures. It is less effective than an algorithm with a same time complexity, and data
+                        structures with few pieces are not a good fit for it.</p>
+
+                    <p>The heap is a binary tree-like data structure where each node has a value greater than or equal
+                        to that of its offspring. Therefore, the root will contain the highest value.</p>
+
+                    <p>The data structure is initially arranged to create the heap, and then it is gradually rearranged
+                        using an algorithm similar to Selection Sort, beginning with the larger pieces.</p>
+
+                    <h3>Time & Space Complexity</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Best Case</th>
+                                <td>O(n logn)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Average Case</td>
+                                <td>O(n logn)</td>
+                            </tr>
+                            <tr>
+                                <th>Worst Case</th>
+                                <td>O(n logn)</td>
+                            </tr>
+                            <tr>
+                                <th>Space Complexity</th>
+                                <td>O(1)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="https://sortvisualizer.com/heapsort/" target="_blank">Whole Reference link</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals end -->
+
+
     <!-- Javascript code start -->
     <script src="assets/js/heapsort.js"></script>
     <!-- Javascript code end -->
