@@ -93,15 +93,15 @@ async function heapify(n, i) {
     let right = 2 * i + 2; // right = 2 * i + 2
 
     if (left < n && Number(blocksHeight[left].childNodes[0].value) > Number(blocksHeight[root].childNodes[0].value)) {
-        root = left; // If left child is larger than root
+        root = left; // Check if the left child is larger than the root
     }
 
     if (right < n && Number(blocksHeight[right].childNodes[0].value) > Number(blocksHeight[root].childNodes[0].value)) {
-        root = right; // If right child is larger than largest so far
+        root = right; // Check if the right child is larger than the root or largest so far
     }
 
     if (root != i) { // If largest is not root
-        let temp1 = blocksHeight[i].style.height;
+        let temp1 = blocksHeight[i].style.height; // Swap the heights and values of the root and largest elements
         let temp2 = blocksHeight[i].childNodes[0].value;
         blocksHeight[i].style.height = blocksHeight[root].style.height;
         blocksHeight[root].style.height = temp1;
@@ -110,7 +110,7 @@ async function heapify(n, i) {
             blocksHeight[root].childNodes[0].value;
         blocksHeight[root].childNodes[0].value = temp2;
 
-        await new Promise((resolve) =>
+        await new Promise((resolve) => // Wait for a short delay using Promise and setTimeout to visualize the swapping
             setTimeout(() => {
                 resolve();
             }, 250)
