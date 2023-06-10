@@ -1,0 +1,104 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#getIndexLengthVal {
+  position: relative;
+}
+#getIndexLengthVal:before {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  margin-left: -10px;
+  content: attr(value);
+  display: block;
+  text-align: center;
+  width: 20px;
+  height: 10px;
+  color: white;
+}
+
+.bord {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 550px;
+    width: 800px;
+    margin: auto;
+}
+.sorted-num-title{
+    padding-left: 35.37px;
+}
+
+#sorted-numbers {
+display: flex;
+    flex-wrap: wrap;
+}
+        
+/* Start Css */
+#array {
+    background-color: #E87C86;
+    height: 350px;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+#count {
+    height: 30px;
+    width: 700px;
+    margin: auto;
+}
+
+/* Value in Height color start */
+.block_height {
+    width: 28px;
+    background-color: #198754;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+}
+/* Value in Height color end */
+
+/* Value in Height number label start */
+.block_input {
+    position: absolute;
+    color: black;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Value in Height number label end */
+
+/* Array in Length box color start */
+.block_legnth {
+    width: 28px;
+    background-color: black;
+    position: absolute;
+    opacity: 1;
+    transition: 0.2s all ease;
+}
+
+/* Array in Length box color end */
+
+/* Array in Length box label start */
+.block_label {
+    position: absolute;
+    color: white;
+    margin-top: 1px;
+    width: 100%;
+    text-align: center;
+}
+/* Array in Length box label end */
+/* End Css */

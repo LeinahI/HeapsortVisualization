@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heap Sort Algorithm</title>
+    <!-- style.css start -->
+    <link rel="stylesheet" href="assets/css/heapsort.css" />
+    <!-- style.css end -->
+
+    <!-- fontawesome cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- fontawesome cdn end -->
+
+    <!-- bootstrap cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap cdn end -->
+</head>
+
+<body>
+    <div class="container-fluid mt-5 mb-5">
+        <div class="container">
+            <!-- Sorting complete alert start -->
+            <div class="row d-flex justify-content-center">
+                <div id="liveAlertPlaceholder" class="col-md-6 text-center">
+
+                </div>
+            </div>
+            <!-- Sorting complete alert end -->
+            <h1 class="text-capitalize text-center">Heap sort Algorithim</h1>
+
+            <!-- border start -->
+            <div class="bord">
+                <!-- Array and count index start -->
+                <div id="array"></div>
+                <div id="count"></div>
+                <!-- Array and count index start -->
+
+                <!-- sorted number start -->
+                <div class="sorted-num-title">
+                    <h5 class="text-capitalize text-start">Sorted Number in order:</h5>
+                    <div id="sorted-numbers"></div>
+                </div>
+                <!-- sorted number end -->
+            </div>
+            <!-- border end -->
+
+            <!-- Buttons start -->
+            <center>
+                <div class="d-flex justify-content-center col-md-8 mt-3">
+                    <!-- Set Array Length start -->
+                    <div class="col-md-3">
+                        <div class="input-group bg-success rounded p-3">
+                            <input type="range" class="form-range" min="8" max="20" value="20" step="1"
+                                id="getIndexLengthVal" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                data-bs-title="Slide index value">
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- whitespaces -->
+                    <!-- Set Array Length end -->
+
+                    <!-- Generate random array length value start -->
+                    <div class="col-md-3">
+                        <button type="button" id="rngArray" class="btn btn-success" data-bs-toggle="tooltip"
+                            data-bs-title="Generate random array value">random array value</button>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- whitespaces -->
+                    <!-- Generate random array length value end -->
+
+                    <!-- start and restart button start -->
+                    <div class="btn-group col-md-2" role="group">
+                        <button type="button" id="startSorting" class="btn btn-success" data-bs-toggle="tooltip"
+                            data-bs-title="Start Sorting"><i class="fa-solid fa-play"
+                                style="color: #ffffff;"></i></button>
+                        <button type="button" id="restartSorting" class="btn btn-danger" data-bs-toggle="tooltip"
+                            data-bs-title="Restart Sorting"><i class="fa-solid fa-rotate-right"
+                                style="color: #ffffff;"></i></button>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- whitespaces -->
+                    <div class="col-md-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            who are we?
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Who are we?</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <h3>• Nathaniel Gatpandan <a href="https://github.com/LeinahI"
+                                                target="_blank"><i class="fa-brands fa-github"
+                                                    style="color: #000000;"></i></a></h3>
+                                        <h3>• Nomer Dela Cruz</h3>
+                                        <h3>• Ashlie Diaz</h3>
+                                        <h3>• Vien Mar Gelantaga-an</p>
+                                            <h3>• Reiniel Jhon Javier</h3>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- start and restart button end -->
+                </div>
+            </center>
+            <!-- Buttons end -->
+        </div>
+    </div>
+    <!-- Javascript code start -->
+    <script src="assets/js/heapsort.js"></script>
+    <!-- Javascript code end -->
+
+</body>
+
+</html>
